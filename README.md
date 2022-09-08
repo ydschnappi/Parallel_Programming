@@ -5,7 +5,6 @@ We implemented three methods (Openmp, MPI, SIMD) on forward and backward part of
 Please see the [report](/documentation/PPSS21_final_project.pdf) for results.
 
 
-## Code Changes
 ### Openmp  
 #### ForwardElimination
 
