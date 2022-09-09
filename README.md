@@ -47,7 +47,7 @@ PS:The function ELiminate realizes the elimination algorithm for rows appointed 
 - The basic strategy is similar as the MPI BackwardSubstitution parallization strateg. We found that implementing OMP to BackwardSubstitution will actually lead to a slower speed. So we don't implement OMP to it by default. If you would like to test it, please uncomment some lines according to the comments in the program.
 ---
 
-### SIMD
+### [SIMD](/bonus)
 
 - In the code for Hybrid, we find a piece of code that can be applied with SIMD.
 ```
