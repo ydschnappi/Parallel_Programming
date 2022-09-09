@@ -5,7 +5,7 @@ We implemented three methods (Openmp, MPI, SIMD) on forward and backward part of
 Please see the [report](/documentation/PPSS21_final_project.pdf) for results.
 
 
-### Openmp  
+### OpenMP 
 #### ForwardElimination
 
 - Optimization of sequential code: There is some unnecessary repeated computation for "diagonal element" and "elimination factor" in the third "for" loop, so we move the computation of these parameters into the second "for" loop. In addition, because there is no access, in the following program, to those entries(the lower triangle of the matrix) that are supposed to be zero, we don't need to operate them anymore and just leave them as what they are.
@@ -47,7 +47,7 @@ PS:The function ELiminate realizes the elimination algorithm for rows appointed 
 - The basic strategy is similar as the MPI BackwardSubstitution parallization strateg. We found that implementing OMP to BackwardSubstitution will actually lead to a slower speed. So we don't implement OMP to it by default. If you would like to test it, please uncomment some lines according to the comments in the program.
 ---
 
-### Bonus
+### SIMD
 
 - In the code for Hybrid, we find a piece of code that can be applied with SIMD.
 ```
